@@ -13,13 +13,9 @@ module.exports = [
       '@nx/enforce-module-boundaries': [
         'error',
         {
-          "enforceBuildableLibDependency": true,
-          "allow": [],
-          "depConstraints": [
-            {
-              "sourceTag": "*",
-              "onlyDependOnLibsWithTags": ["*"]
-            },
+          enforceBuildableLibDependency: true,
+          allow: [],
+          depConstraints: [
             {
               "sourceTag": "type:feature",
               "onlyDependOnLibsWithTags": ["type:feature", "type:ui"]
@@ -30,22 +26,18 @@ module.exports = [
             },
             {
               "sourceTag": "scope:orders",
-              "onlyDependOnLibsWithTags": [
-                "scope:orders",
-                "scope:products",
-                "scope:shared"
-              ]
+              "onlyDependOnLibsWithTags": ["scope:orders", "scope:products", "scope:shared"] 
             },
             {
               "sourceTag": "scope:products",
-              "onlyDependOnLibsWithTags": ["scope:products", "scope:shared"]
+              "onlyDependOnLibsWithTags": ["scope:products", "scope:shared" ]
             },
             {
               "sourceTag": "scope:shared",
-              "onlyDependOnLibsWithTags": ["scope:shared"]
-            }
-          ]
-        }
+              "onlyDependOnLibsWithTags": ["scope:shared" ]
+            },
+          ],
+        },
       ],
     },
   },
