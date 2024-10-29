@@ -21,7 +21,7 @@ describe("CityWeather", () => {
   });
 
   test("render 400 error message", async () => {
-    render(<CityWeather city="ckmnsdkcmnw" />);
+    render(<CityWeather city="ckmnsdkcmnw??" />);
     await waitFor(() => {
       expect(
         screen.getByText(

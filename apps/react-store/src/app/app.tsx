@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import NxWelcome from './nx-welcome';
 import { Products } from '@react-monorepo/products';
 import { Orders } from '@react-monorepo/orders';
 
